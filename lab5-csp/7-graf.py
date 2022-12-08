@@ -58,7 +58,7 @@ def backtracking_recursive_mrv_fc(
 n = 8
 graph = generate_graph(n)
 
-variable_domain = {i for i in range(n)}
+variable_domain = { i for i in range(n) }
 domains = dict()
 for key in graph.keys():
   domains[key] = copy.copy(variable_domain)
